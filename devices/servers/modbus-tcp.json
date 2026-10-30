@@ -1,0 +1,29 @@
+{
+  "name": "Modbus TCP Server",
+  "protocol": "modbus-tcp",
+  "modbusSlaveConfig": {
+    "enabled": true,
+    "transports": ["tcp"],
+    "networkInterface": "0.0.0.0",
+    "port": 5020,
+    "slaveId": 1,
+    "bufferMapping": {
+      "holdingRegisters": {
+        "qwCount": 1024,
+        "mwCount": 1024,
+        "mdCount": 1024,
+        "mlCount": 0
+      },
+      "coils": {
+        "qxBits": 8192,
+        "mxBits": 0
+      },
+      "discreteInputs": {
+        "ixBits": 8192
+      },
+      "inputRegisters": {
+        "iwCount": 1024
+      }
+    }
+  }
+}

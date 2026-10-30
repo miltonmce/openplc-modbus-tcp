@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "name": "Emulador de bombeo Modbus TCP",
+    "type": "plc-project"
+  },
+  "data": {
+    "dataTypes": [],
+    "globalVariableLists": [],
+    "pous": [],
+    "configuration": {
+      "resource": {
+        "tasks": [
+          {
+            "name": "task0",
+            "triggering": "Cyclic",
+            "interval": "T#20ms",
+            "priority": 1
+          }
+        ],
+        "instances": [
+          {
+            "name": "instance0",
+            "task": "task0",
+            "program": "main"
+          }
+        ],
+        "globalVariables": []
+      }
+    },
+    "libraries": [],
+    "debugVariables": {
+      "pous": {
+        "main": [
+          "Start_Button",
+          "Stop_Button",
+          "Emergency_Stop",
+          "Water_Level_OK",
+          "Reset_Fault",
+          "Reset_Volume",
+          "Pump_Cmd",
+          "Flow_Rate_Lpm",
+          "Volume_Liters",
+          "Fault_Active",
+          "Fault_Code"
+        ]
+      }
+    }
+  }
+}
