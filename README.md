@@ -49,7 +49,7 @@ directly.
 
 ## Quick start
 
-Requirements: [OpenPLC Editor v4](https://github.com/Autonomy-Logic/openplc-editor),
+Requirements: [OpenPLC Editor v4](https://github.com/Autonomy-Logic/openplc-editor/releases/download/v4.3.3/OpenPLC.Editor-4.3.3.AppImage),
 podman or docker, Python 3.10+ and the dependencies in `requirements.txt`.
 
 ```sh
